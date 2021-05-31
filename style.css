@@ -1,81 +1,184 @@
 body {
-    background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  background-color: #674baf;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #ebe7e7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+section .logo, section .mockup {
+  margin-bottom: 50px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+section .mockup {
+  width: 100%;
+}
+
+section h1 {
+  width: 300px;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+section button {
+  margin-top: 20px;
+  width: 70%;
+  padding: 15px;
+  border-radius: 30px;
+  color: #674baf;
+  font-weight: 600;
+  border: none;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+}
+
+section button:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .social-media img {
+  margin: 35px 10px 10px 10px;
+  padding: 10px;
+  border: 1px white solid;
+  border-radius: 30px;
+  background-color: white;
+}
+
+footer .social-media img:hover {
+  border-color: #e882e8;
+  background-color: #e882e8;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
     background-image: url(images/bg-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: 84%;
-    background-position-x: 10px;
-    font-family: 'Open Sans', sans-serif;
-    
-
-}
-
-.main-container {
+    background-size: 90% 105%;
+    background-position: 0 0px;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    height: 850px;
-    margin: 60px 80px 50px 80px;
-}
-
-.right-container {
-    width: 40%;
-    margin: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 80px 80px 75px 80px;
+    margin-left: 110px;
+  }
+  .main .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    margin-right: 50px;
+  }
+  .main .logo {
+    width: 30%;
     position: relative;
-    top: 90px;
-}
-
-.social-media {
-    position: absolute;
-    bottom: 25px;
-    right: 65px;
-}
-
-.illustration {
+  }
+  .main .mockup {
     width: 100%;
     position: relative;
-    top: 50px;
+    top: 20px;
+  }
+  .main .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    width: 45%;
+    margin-left: 20px;
+    position: relative;
+    bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .main .main-container h1 {
+    font-size: 3rem;
+    width: 80%;
+  }
+  .main .main-container p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    width: 85%;
+  }
+  .main .main-container button {
+    width: 30%;
+    padding: 20px;
+    font-size: 1rem;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+  footer .social-media {
+    position: absolute;
+    right: 80px;
+    bottom: 50px;
+  }
 }
-
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: white;
-    font-size: 3.125rem;
-}
-
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: white;
-    font-size: 1.45rem;
-}
-
-button {
-    padding: 0.9375rem 3.75rem;
-    border-radius: 1.875rem;
-    border: solid 3px;
-    font-size: 1.0625rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: hsl(257, 40%, 49%);
-}
-
-button:hover {
-    color: white;
-    background-color: hsl(300, 69%, 71%);
-    border: none;
-}
-
-.social-media img {
-    /* width: 30px; */
-    border: solid 2px black;
-    border-radius: 30px;
-    /* background-color: white; */
-    width: 20px;
-    margin: 5px;
-    padding: 10px;
-    background-color: white;
-}
-
-.social-media img:hover {
-    background-color: hsl(300, 69%, 71%);
-    border-color: hsl(300, 69%, 71%);
-}
+/*# sourceMappingURL=style.css.map */
