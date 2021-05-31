@@ -35,8 +35,12 @@ section {
 
 section .logo, section .mockup {
   margin-bottom: 50px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 section .mockup {
@@ -44,13 +48,11 @@ section .mockup {
 }
 
 section h1 {
-  width: 300px;
+  width: auto;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 section button {
