@@ -169,6 +169,10 @@ footer .social-media img:hover {
     padding: 20px;
     font-size: 1rem;
   }
+  .main .main-container button:hover {
+    background-color: #e882e8;
+    color: white;
+  }
   footer {
     position: relative;
     bottom: 0;
