@@ -65,11 +65,7 @@ section button {
   border: none;
   -webkit-box-shadow: 2px 2px 4px black;
           box-shadow: 2px 2px 4px black;
-}
-
-section button:hover {
-  background-color: #e882e8;
-  color: white;
+  background-color: white;
 }
 
 footer {

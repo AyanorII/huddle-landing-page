@@ -55,12 +55,9 @@ section {
         font-weight: 600;
         border: none;
         box-shadow: 2px 2px 4px black;
+        background-color: white;
     }
 
-    button:hover {
-        background-color: hsl(300, 69%, 71%);
-        color: white;
-    }
 }
 
 footer {
